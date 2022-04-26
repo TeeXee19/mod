@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Dashboard</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+  	<link type="text/css" rel="stylesheet" href="assets/css/custom.css"  media="screen,projection"/>
+</head>
+<body class="has-fixed-sidenav">
+	<header>
+      <div class="navbar-fixed">
+        <nav class="navbar white">
+          <div class="nav-wrapper">
+          	<a href="#!" class="brand-logo grey-text text-darken-4"><img src="assets/img/mod.png" alt="logo"></a>
+			<a href="#!" data-target="sidenav-left" class="sidenav-trigger left"><i class="material-icons black-text">menu</i></a>
+			<ul class="navbar-list right">
+				<li>
+					<a class="waves-effect waves-block waves-light profile-button profile-dropdown" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-7.png" alt="avatar"><i></i></span>
+					</a>
+					<ul class="dropdown-content" id="profile-dropdown" tabindex="0" style="">
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-profile-page.html"><i class="material-icons">person_outline</i> Profile</a></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="app-chat.html"><i class="material-icons">chat_bubble_outline</i> Chat</a></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="page-faq.html"><i class="material-icons">help_outline</i> Help</a></li>
+		              <li class="divider" tabindex="0"></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-lock-screen.html"><i class="material-icons">lock_outline</i> Lock</a></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-login.html"><i class="material-icons">keyboard_tab</i> Logout</a></li>
+		            </ul>
+		        </li>
+			</ul>
+          </div>
+        </nav>
+      </div>
+
+      <ul id="sidenav-left" class="sidenav sidenav-fixed" style="transform: translateX(0%);">
+        <li><a href="/pages/admin-dashboard" class="logo-container">Admin<i class="material-icons left">spa</i></a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+		       <li><a href="/pages/admin-dashboard" class="waves-effect active">Dashboard<i class="material-icons">web</i></a></li>
+	           <li><a class="waves-effect active" href="#">Notifications<i class="material-icons">notifications</i></a></li>
+	           <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Requisition<i class="material-icons chevron">chevron_left</i></a>
+	              <div class="collapsible-body" >
+	                <ul>
+	                  <li><a href="/pages/admin-dashboard" class="waves-effect active">Create Requisition<i class="material-icons">add</i></a></li>
+	                  <li><a href="/pages/admin-fixed-chart" class="waves-effect">Manage Requisition<i class="material-icons">list</i></a></li>
+	                </ul>
+	              </div>
+	            </li>
+          </ul>
+        </li>
+      </ul> 
+      
+    </header>
+        
+    <main>
+    	<div class="row">	
+  <div class="col s12">
+ 	<div class="container">
+ 		<div class="section">
+			<div id="card-stats" class="pt-0">
+				<div class="row">
+				 <div class="col s12 m6 l6 xl3">
+				    <div class="card gradient-45deg-light-blue-cyan gradient-shadow min-height-100 white-text animate fadeLeft">
+				       <div class="padding-4">
+				          <div class="row">
+				             <div class="col s7 m7">
+				                <i class="material-icons background-round mt-5">feed</i>
+				                <p>Requisitions</p>
+				             </div>
+				             <div class="col s5 m5 right-align">
+				                <h4 class="mb-0 white-text">690</h4>
+				             </div>
+				          </div>
+				       </div>
+				    </div>
+				 </div>
+				 <div class="col s12 m6 l6 xl3">
+				    <div class="card gradient-45deg-red-pink gradient-shadow min-height-100 white-text animate fadeLeft">
+				       <div class="padding-4">
+				          <div class="row">
+				             <div class="col s7 m7">
+				                <i class="material-icons background-round mt-5">file_open</i>
+				                <p>Open</p>
+				             </div>
+				             <div class="col s5 m5 right-align">
+				                <h4 class="mb-0 white-text">185</h4>
+				             </div>
+				          </div>
+				       </div>
+				    </div>
+				 </div>
+				 <div class="col s12 m6 l6 xl3">
+				    <div class="card gradient-45deg-amber-amber gradient-shadow min-height-100 white-text animate fadeRight">
+				       <div class="padding-4">
+				          <div class="row">
+				             <div class="col s7 m7">
+				                <i class="material-icons background-round mt-5">access_time</i>
+				                <p>Pending</p>
+				             </div>
+				             <div class="col s5 m5 right-align">
+				                <h4 class="mb-0 white-text">347</h4>
+				             </div>
+				          </div>
+				       </div>
+				    </div>
+				 </div>
+				 <div class="col s12 m6 l6 xl3">
+				    <div class="card gradient-45deg-green-teal gradient-shadow min-height-100 white-text animate fadeRight">
+				       <div class="padding-4">
+				          <div class="row">
+				             <div class="col s7 m7">
+				                <i class="material-icons background-round mt-5">done_all</i>
+				                <p>Approved</p>
+				             </div>
+				             <div class="col s5 m5 right-align">
+				                <h4 class="mb-0 white-text">4</h4>
+				             </div>
+				          </div>
+				       </div>
+				    </div>
+				 </div>
+				</div>
+			</div>
+		</div>		
+ 	</div>	
+  </div>
+</div> 
+
+
+<div class="row">
+  <div id="man" class="col s12">
+    <div class="card material-table">
+      <div class="table-header">
+        <div class="actions">
+          <a href="#" class="search-toggle waves-effect btn-flat nopadding"><i class="material-icons">search</i></a>
+        </div>
+      </div>
+      <table id="datatable" class="bordered">
+        <thead class="gradient-45deg-green-teal">
+          <tr >
+            <th>S/No</th>
+            <th>Request Dept</th>
+            <th>Rq_No</th>
+            <th>Title</th>
+            <th>Cost</th>
+            <th>Status</th>
+            <th>Request Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          	<td>1</td>
+          	<td>Education</td>
+          	<td>2233990</td>
+          	<td>Tested</td>
+          	<td>&#8358; 3,000</td>
+          	<td>Confirmed</td>
+          	<td>12/01/2022</td>
+          </tr>
+          <tr>
+          	<td>2</td>
+          	<td>Education</td>
+          	<td>2233990</td>
+          	<td>Tested</td>
+          	<td>&#8358; 3,000</td>
+          	<td>Confirmed</td>
+          	<td>12/10/2022</td>
+          </tr>
+          <tr>
+          	<td>3</td>
+          	<td>Education</td>
+          	<td>2233990</td>
+          	<td>Tested</td>
+          	<td>&#8358; 3,000</td>
+          	<td>Confirmed</td>
+          	<td>12/11/2022</td>
+          </tr>
+        
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+    </main>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+    
+	  $(document).ready(function(){
+	    $('.sidenav').sidenav();
+		$('.profile-dropdown').dropdown();
+	    $('.collapsible').collapsible();
+	  });
+
+	  (function(window, document, undefined) {
+
+  var factory = function($, DataTable) {
+    "use strict";
+
+    $('.search-toggle').click(function() {
+      if ($('.hiddensearch').css('display') == 'none')
+        $('.hiddensearch').slideDown();
+      else
+        $('.hiddensearch').slideUp();
+    });
+
+    /* Set the defaults for DataTables initialisation */
+    $.extend(true, DataTable.defaults, {
+      dom: "<'hiddensearch'f'>" +
+        "tr" +
+        "<'table-footer'lip'>",
+      renderer: 'material'
+    });
+
+    /* Default class modification */
+    $.extend(DataTable.ext.classes, {
+      sWrapper: "dataTables_wrapper",
+      sFilterInput: "form-control input-sm",
+      sLengthSelect: "form-control input-sm"
+    });
+
+    /* Bootstrap paging button renderer */
+    DataTable.ext.renderer.pageButton.material = function(settings, host, idx, buttons, page, pages) {
+      var api = new DataTable.Api(settings);
+      var classes = settings.oClasses;
+      var lang = settings.oLanguage.oPaginate;
+      var btnDisplay, btnClass, counter = 0;
+
+      var attach = function(container, buttons) {
+        var i, ien, node, button;
+        var clickHandler = function(e) {
+          e.preventDefault();
+          if (!$(e.currentTarget).hasClass('disabled')) {
+            api.page(e.data.action).draw(false);
+          }
+        };
+
+        for (i = 0, ien = buttons.length; i < ien; i++) {
+          button = buttons[i];
+
+          if ($.isArray(button)) {
+            attach(container, button);
+          } else {
+            btnDisplay = '';
+            btnClass = '';
+
+            switch (button) {
+
+              case 'first':
+                btnDisplay = lang.sFirst;
+                btnClass = button + (page > 0 ?
+                  '' : ' disabled');
+                break;
+
+              case 'previous':
+                btnDisplay = '<i class="material-icons">chevron_left</i>';
+                btnClass = button + (page > 0 ?
+                  '' : ' disabled');
+                break;
+
+              case 'next':
+                btnDisplay = '<i class="material-icons">chevron_right</i>';
+                btnClass = button + (page < pages - 1 ?
+                  '' : ' disabled');
+                break;
+
+              case 'last':
+                btnDisplay = lang.sLast;
+                btnClass = button + (page < pages - 1 ?
+                  '' : ' disabled');
+                break;
+
+            }
+
+            if (btnDisplay) {
+              node = $('<li>', {
+                  'class': classes.sPageButton + ' ' + btnClass,
+                  'id': idx === 0 && typeof button === 'string' ?
+                    settings.sTableId + '_' + button : null
+                })
+                .append($('<a>', {
+                    'href': '#',
+                    'aria-controls': settings.sTableId,
+                    'data-dt-idx': counter,
+                    'tabindex': settings.iTabIndex
+                  })
+                  .html(btnDisplay)
+                )
+                .appendTo(container);
+
+              settings.oApi._fnBindAction(
+                node, {
+                  action: button
+                }, clickHandler
+              );
+
+              counter++;
+            }
+          }
+        }
+      };
+
+      // IE9 throws an 'unknown error' if document.activeElement is used
+      // inside an iframe or frame. 
+      var activeEl;
+
+      try {
+        // Because this approach is destroying and recreating the paging
+        // elements, focus is lost on the select button which is bad for
+        // accessibility. So we want to restore focus once the draw has
+        // completed
+        activeEl = $(document.activeElement).data('dt-idx');
+      } catch (e) {}
+
+      attach(
+        $(host).empty().html('<ul class="material-pagination"/>').children('ul'),
+        buttons
+      );
+
+      if (activeEl) {
+        $(host).find('[data-dt-idx=' + activeEl + ']').focus();
+      }
+    };
+
+    /*
+     * TableTools Bootstrap compatibility
+     * Required TableTools 2.1+
+     */
+    if (DataTable.TableTools) {
+      // Set the classes that TableTools uses to something suitable for Bootstrap
+      $.extend(true, DataTable.TableTools.classes, {
+        "container": "DTTT btn-group",
+        "buttons": {
+          "normal": "btn btn-default",
+          "disabled": "disabled"
+        },
+        "collection": {
+          "container": "DTTT_dropdown dropdown-menu",
+          "buttons": {
+            "normal": "",
+            "disabled": "disabled"
+          }
+        },
+        "print": {
+          "info": "DTTT_print_info"
+        },
+        "select": {
+          "row": "active"
+        }
+      });
+
+      // Have the collection use a material compatible drop down
+      $.extend(true, DataTable.TableTools.DEFAULTS.oTags, {
+        "collection": {
+          "container": "ul",
+          "button": "li",
+          "liner": "a"
+        }
+      });
+    }
+
+  }; // /factory
+
+  // Define as an AMD module if possible
+  if (typeof define === 'function' && define.amd) {
+    define(['jquery', 'datatables'], factory);
+  } else if (typeof exports === 'object') {
+    // Node/CommonJS
+    factory(require('jquery'), require('datatables'));
+  } else if (jQuery) {
+    // Otherwise simply initialise as normal, stopping multiple evaluation
+    factory(jQuery, jQuery.fn.dataTable);
+  }
+
+})(window, document);
+
+$(document).ready(function() {
+  $('#datatable').dataTable({
+    "oLanguage": {
+      "sStripClasses": "",
+      "sSearch": "",
+      "sSearchPlaceholder": "Enter Keywords Here",
+      "sInfo": "_START_ -_END_ of _TOTAL_",
+      "sLengthMenu": '<span>Rows per page:</span><select class="browser-default">' +
+        '<option value="5">5</option>' +
+        '<option value="10">10</option>' +
+        '<option value="20">20</option>' +
+        '<option value="30">30</option>' +
+        '<option value="40">40</option>' +
+        '<option value="50">50</option>' +
+        '<option value="-1">All</option>' +
+        '</select></div>'
+    },
+    bAutoWidth: false
+  });
+});
+		        
+    </script>
+</body>
+</html>

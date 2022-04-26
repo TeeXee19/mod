@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Dashboard</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+  	<link type="text/css" rel="stylesheet" href="assets/css/custom.css"  media="screen,projection"/>
+</head>
+<body class="has-fixed-sidenav">
+	<header>
+      <div class="navbar-fixed">
+        <nav class="navbar white">
+          <div class="nav-wrapper">
+          	<a href="#!" class="brand-logo grey-text text-darken-4"><img src="assets/img/mod.png" alt="logo"></a>
+			<a href="#!" data-target="sidenav-left" class="sidenav-trigger left"><i class="material-icons black-text">menu</i></a>
+			<ul class="navbar-list right">
+				<li>
+					<a class="waves-effect waves-block waves-light profile-button profile-dropdown" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-7.png" alt="avatar"><i></i></span>
+					</a>
+					<ul class="dropdown-content" id="profile-dropdown" tabindex="0" style="">
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-profile-page.html"><i class="material-icons">person_outline</i> Profile</a></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="app-chat.html"><i class="material-icons">chat_bubble_outline</i> Chat</a></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="page-faq.html"><i class="material-icons">help_outline</i> Help</a></li>
+		              <li class="divider" tabindex="0"></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-lock-screen.html"><i class="material-icons">lock_outline</i> Lock</a></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-login.html"><i class="material-icons">keyboard_tab</i> Logout</a></li>
+		            </ul>
+		        </li>
+			</ul>
+          </div>
+        </nav>
+      </div>
+
+      <ul id="sidenav-left" class="sidenav sidenav-fixed" style="transform: translateX(0%);">
+        <li><a href="/pages/admin-dashboard" class="logo-container">Admin<i class="material-icons left">spa</i></a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+		       <li>
+              <a href="/pages/admin-dashboard" class="waves-effect ">Dashboard<i class="material-icons">web</i></a>
+           </li>
+	         <li>
+              <a class="waves-effect active" href="#">Departments<i class="material-icons">apartment</i></a>
+           </li>
+	         <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Requisition<i class="material-icons chevron">chevron_left</i></a>
+              <div class="collapsible-body" >
+                <ul>
+                  <li><a href="/pages/admin-dashboard" class="waves-effect ">Create Requisition<i class="material-icons">add</i></a></li>
+                  <li><a href="/pages/admin-fixed-chart" class="waves-effect">Manage Requisition<i class="material-icons">list</i></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Users<i class="material-icons chevron">chevron_left</i></a>
+              <div class="collapsible-body" >
+                <ul>
+                  <li><a href="/pages/admin-dashboard" class="waves-effect ">Create User<i class="material-icons">add</i></a></li>
+                  <li><a href="/pages/admin-fixed-chart" class="waves-effect">Manage Users<i class="material-icons">list</i></a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul> 
+      
+    </header>
+        
+<main class="container">
+ <div class="section add-dept-section">
+      <div class="col s12 m6">
+      <div class="card darken-1">
+        <div class="card-content">
+          <span class="card-title">Add User</span>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <select>
+                  <option value="" disabled selected>Select Role</option>
+                  <option value="User">User</option>
+                  <option value="HOD">HOD</option>
+                  <option value="Director">Director</option>
+                  <option value="System Admin">System Admin</option>
+                  <option value="Read Only">Read Only</option>
+                  <option value="Other">Other</option>
+                </select>
+                <label>Role</label>
+              </div>
+              <div class="input-field col s6">
+                <select>
+                  <option value="" disabled selected>Select Department</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Department</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+                <span class="helper-text" data-error="input correct email format" data-success="right"></span>
+              </div>
+
+              <div class="input-field col s6">
+                <input id="username" type="text" class="validate">
+                <label for="username">Username</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+            </div>
+           
+            <div class="row">
+              <div class="col s12">
+                This is an inline input field:
+                <div class="input-field inline">
+                  <input id="email_inline" type="email" class="validate">
+                  <label for="email_inline">Email</label>
+                  <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                </div>
+              </div>
+            </div>          
+        </div>
+        <div class="card-action">
+           <button class="btn waves-effect waves-light gradient-45deg-green-teal right" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+    
+	  $(document).ready(function(){
+	    $('.sidenav').sidenav();
+		  
+      $('.profile-dropdown').dropdown();
+	    
+      $('.collapsible').collapsible();
+      
+      $('select').formSelect();
+	  });
+
+	 
+    </script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Dashboard</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+  	<link type="text/css" rel="stylesheet" href="assets/css/custom.css"  media="screen,projection"/>
+</head>
+<body class="has-fixed-sidenav">
+	<header>
+      <div class="navbar-fixed">
+        <nav class="navbar white">
+          <div class="nav-wrapper">
+          	<a href="#!" class="brand-logo grey-text text-darken-4"><img src="assets/img/mod.png" alt="logo"></a>
+			<a href="#!" data-target="sidenav-left" class="sidenav-trigger left"><i class="material-icons black-text">menu</i></a>
+			<ul class="navbar-list right">
+				<li>
+					<a class="waves-effect waves-block waves-light profile-button profile-dropdown" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-7.png" alt="avatar"><i></i></span>
+					</a>
+					<ul class="dropdown-content" id="profile-dropdown" tabindex="0" style="">
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-profile-page.html"><i class="material-icons">person_outline</i> Profile</a></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="app-chat.html"><i class="material-icons">chat_bubble_outline</i> Chat</a></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="page-faq.html"><i class="material-icons">help_outline</i> Help</a></li>
+		              <li class="divider" tabindex="0"></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-lock-screen.html"><i class="material-icons">lock_outline</i> Lock</a></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-login.html"><i class="material-icons">keyboard_tab</i> Logout</a></li>
+		            </ul>
+		        </li>
+			</ul>
+          </div>
+        </nav>
+      </div>
+
+       <ul id="sidenav-left" class="sidenav sidenav-fixed" style="transform: translateX(0%);">
+        <li><a href="/pages/admin-dashboard" class="logo-container">Username<i class="material-icons left">spa</i></a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+           <li>
+              <a href="/pages/admin-dashboard" class="waves-effect ">Dashboard<i class="material-icons">web</i></a>
+           </li>
+           <li>
+              <a class="waves-effect active" href="#">Notifications<i class="material-icons">notifications</i></a>
+           </li>
+           <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Requests<i class="material-icons chevron">chevron_left</i></a>
+              <div class="collapsible-body" >
+                <ul>
+                  <li><a href="/pages/admin-dashboard" class="waves-effect ">Create Requisition<i class="material-icons">add</i></a></li>
+                  <li><a href="/pages/admin-fixed-chart" class="waves-effect">Manage Requisition<i class="material-icons">list</i></a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul> 
+      
+    </header>
+        
+    <main>
+
+
+
+<div class="section add-dept-section">
+      <div class="col s12 m6">
+      <div class="card darken-1">
+        <div class="card-content">
+          <span class="card-title">Create Request</span>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="request_no" name="request_no" type="number" class="validate">
+                <label for="request_no">Request Number</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="requester" name="requester" type="text" class="validate" disabled="true" placeholder="John Doe">
+                <label for="requester">Requester</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <select>
+                  <option value="" disabled selected>Select Request Type</option>
+                  <option value="File">File</option>
+                  <option value="Memo">Memo</option>
+                </select>
+                <label>Request Type</label>
+              </div>
+              <div class="input-field col s6">
+                <select>
+                  <option value="" disabled selected>Select Department</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Department</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s6">
+                <select>
+                  <option value="" disabled selected>Select</option>
+                  <option value="Account">Account</option>
+                  <option value="Budget">Budget</option>
+                </select>
+                <label>Division</label>
+              </div>
+              <div class="input-field col s6">
+                <select>
+                  <option value="" disabled selected>Select</option>
+                  <option value="Assistance Chief Education Officer">Assistance Chief Education Officer</option>
+                  <option value="Assistant Director Advances">Assistant Director Advances</option>
+                  <option value="Assistant Director Capital">Assistant Director Capital</option>
+                  <option value="Assistant Director Education">Assistant Director Education</option>
+                  <option value="Assistant Director Exchange">Assistant Director Exchange</option>
+                  <option value="Assistant Director Final Accounts">Assistant Director Final Accounts</option>
+                  <option value="Assistant Director Funds">Assistant Director Funds</option>
+                  <option value="Assistant Director Procurement">Assistant Director Procurement</option>
+                  <option value="Assistant Director Recurrent">Assistant Director Recurrent</option>
+                  <option value="Assistant Director Salary/IPPIS">Assistant Director Salary/IPPIS</option>
+                  <option value="Assistant Director Staff Welfare">Assistant Director Staff Welfare</option>
+                  <option value="Audit">Audit</option>
+                  <option value="Cash Pay Office">Cash Pay Office</option>
+                  <option value="Checking">Checking</option>
+                  <option value="Chief Education Officer">Chief Education Officer</option>
+                  <option value="Deputy Director Budget">Deputy Director Budget</option>
+                  <option value="Deputy Director Education">Deputy Director Education</option>
+                  <option value="Deputy Director Expenditure">Deputy Director Expenditure</option>
+                  <option value="Deputy Director Fiscal and Final Report">Deputy Director Fiscal and Final Report</option>
+                  <option value="Deputy Director Procurement">Deputy Director Procurement</option>
+                  <option value="Deputy Director PRS">Deputy Director PRS</option>
+                  <option value="Deputy Director Staff Welfare">Deputy Director Staff Welfare</option>
+                  <option value="Director Education">Director Education</option>
+                  <option value="Director Finance and Account">Director Finance and Account</option>
+                  <option value="Director HRM">Director HRM</option>
+                  <option value="Director Procurement">Director Procurement</option>
+                  <option value="Director PRS">Director PRS</option>
+                  <option value="HOD">HOD</option>
+                  <option value="Permanent Secretary">Permanent Secretary</option>
+                  <option value="System Admin">System Admin</option>
+                  <option value="Technical Adviser">Technical Adviser</option>
+                  <option value="User">User</option>
+                </select>
+                <label>Rank</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s6">
+                <select>
+                  <option value="" disabled selected>Select</option>
+                  <option selected="selected" value="Normal">Normal</option>
+                  <option value="Medium">Medium</option>
+                  <option value="High">High</option>
+                </select>
+                <label>Priority</label>
+              </div>
+            </div>
+
+              <div class="divider"></div>
+
+           <div class="row">
+              <div class="input-field col s12">
+                <input id="title" name="title" type="text" class="validate">
+                <label for="title">Title</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Description</label>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="file-field input-field">
+                <div class="btn">
+                  <span>File</span>
+                  <input type="file" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+            </div>
+              
+        </div>
+        <div class="card-action">
+           <button class="btn waves-effect waves-light gradient-45deg-green-teal right" type="submit" name="action"> <i class="material-icons right">add</i> Create
+            </button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    </main>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+<script>
+
+	  $(document).ready(function(){
+	    $('.sidenav').sidenav();
+  
+  		$('.profile-dropdown').dropdown();
+
+	    $('.collapsible').collapsible();
+
+      $('select').formSelect();
+	  });	 
+</script>
+</body>
+</html>
