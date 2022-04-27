@@ -4,201 +4,138 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>login</title>
+	<title>Profile</title>
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   	<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
   	<link type="text/css" rel="stylesheet" href="assets/css/custom.css"  media="screen,projection"/>
 </head>
 <body class="has-fixed-sidenav">
-	<header>
+	 <header>
       <div class="navbar-fixed">
         <nav class="navbar white">
           <div class="nav-wrapper">
-          	<a href="#!" class="brand-logo grey-text text-darken-4"><img src="assets/img/mod.png" alt="logo"></a>
-			<a href="#!" data-target="sidenav-left" class="sidenav-trigger left"><i class="material-icons black-text">menu</i></a>
-			<ul class="navbar-list right">
-				<li>Home</li>
-				<li>
-					<a class="waves-effect waves-block waves-light profile-button profile-dropdown" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-7.png" alt="avatar"><i></i></span>
-					</a>
-					<ul class="dropdown-content" id="profile-dropdown" tabindex="0" style="">
-		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-profile-page.html"><i class="material-icons">person_outline</i> Profile</a></li>
-		              <li tabindex="0"><a class="grey-text text-darken-1" href="app-chat.html"><i class="material-icons">chat_bubble_outline</i> Chat</a></li>
-		              <li tabindex="0"><a class="grey-text text-darken-1" href="page-faq.html"><i class="material-icons">help_outline</i> Help</a></li>
-		              <li class="divider" tabindex="0"></li>
-		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-lock-screen.html"><i class="material-icons">lock_outline</i> Lock</a></li>
-		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-login.html"><i class="material-icons">keyboard_tab</i> Logout</a></li>
-		            </ul>
-		        </li>
-			</ul>
+            <a href="#!" class="brand-logo grey-text text-darken-4"><img src="assets/img/mod.png" alt="logo"></a>
+      <a href="#!" data-target="sidenav-left" class="sidenav-trigger left"><i class="material-icons black-text">menu</i></a>
+      <ul class="navbar-list right">
+        <li>
+          <a class="waves-effect waves-block waves-light profile-button profile-dropdown" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-7.png" alt="avatar"><i></i></span>
+          </a>
+          <ul class="dropdown-content" id="profile-dropdown" tabindex="0" style="">
+                  <li tabindex="0"><a class="grey-text text-darken-1" href="./profile.html"><i class="material-icons">person_outline</i> Profile</a></li>
+                  <li class="divider" tabindex="0"></li>
+                  <li tabindex="0"><a class="grey-text text-darken-1" href="user-login.html"><i class="material-icons">keyboard_tab</i> Logout</a></li>
+                </ul>
+            </li>
+      </ul>
           </div>
         </nav>
       </div>
 
-      <ul id="sidenav-left" class="sidenav sidenav-fixed" style="transform: translateX(0%);">
-        <li><a href="/pages/admin-dashboard" class="logo-container">Admin<i class="material-icons left">spa</i></a></li>
+       <ul id="sidenav-left" class="sidenav sidenav-fixed" style="transform: translateX(0%);">
+        <li><a href="/pages/admin-dashboard" class="logo-container">Username<i class="material-icons left">spa</i></a></li>
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
-            <li class="bold waves-effect active"><a class="collapsible-header" tabindex="0">Pages<i class="material-icons chevron">chevron_left</i></a>
-              <div class="collapsible-body" style="display: block;">
+           <li>
+              <a href="/pages/admin-dashboard" class="waves-effect ">Dashboard<i class="material-icons">web</i></a>
+           </li>
+           <li>
+              <a class="waves-effect active" href="#">Notifications<i class="material-icons">notifications</i></a>
+           </li>
+           <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Requests<i class="material-icons chevron">chevron_left</i></a>
+              <div class="collapsible-body" >
                 <ul>
-                  <li><a href="/pages/admin-dashboard" class="waves-effect active">Dashboard<i class="material-icons">web</i></a></li>
-                  <li><a href="/pages/admin-fixed-chart" class="waves-effect">Fixed Chart<i class="material-icons">list</i></a></li>
-                  <li><a href="/pages/admin-grid" class="waves-effect">Grid<i class="material-icons">dashboard</i></a></li>
-                  <li><a href="/pages/admin-chat" class="waves-effect">Chat<i class="material-icons">chat</i></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Charts<i class="material-icons chevron">chevron_left</i></a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="/pages/admin-line-charts" class="waves-effect">Line Charts<i class="material-icons">show_chart</i></a></li>
-                  <li><a href="/pages/admin-bar-charts" class="waves-effect">Bar Charts<i class="material-icons">equalizer</i></a></li>
-                  <li><a href="/pages/admin-area-charts" class="waves-effect">Area Charts<i class="material-icons">multiline_chart</i></a></li>
-                  <li><a href="/pages/admin-doughnut-charts" class="waves-effect">Doughnut Charts<i class="material-icons">pie_chart</i></a></li>
-                  <li><a href="/pages/admin-financial-charts" class="waves-effect">Financial Charts<i class="material-icons">euro_symbol</i></a></li>
-                  <li><a href="/pages/admin-interactive-charts" class="waves-effect">Interactive Charts<i class="material-icons">touch_app</i></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Tables<i class="material-icons chevron">chevron_left</i></a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="/pages/admin-fullscreen-table" class="waves-effect">Fullscreen with Chart<i class="material-icons">show_chart</i></a></li>
-                  <li><a href="/pages/admin-table-custom-elements" class="waves-effect">Table with Custom Elements<i class="material-icons">settings</i></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Calendar<i class="material-icons chevron">chevron_left</i></a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="/pages/admin-calendar" class="waves-effect">Calendar<i class="material-icons">cloud</i></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Headers<i class="material-icons chevron">chevron_left</i></a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="/pages/admin-header-tabbed" class="waves-effect">Tabbed<i class="material-icons">tab</i></a></li>
-                  <li><a href="/pages/admin-header-metrics" class="waves-effect">Metrics<i class="material-icons">web</i></a></li>
-                  <li><a href="/pages/admin-header-search" class="waves-effect">Search<i class="material-icons">search</i></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Account<i class="material-icons chevron">chevron_left</i></a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="/pages/admin-log-in" class="waves-effect">Log In<i class="material-icons">person</i></a></li>
-                  <li><a href="/pages/admin-settings" class="waves-effect">Settings<i class="material-icons">settings</i></a></li>
+                  <li><a href="/pages/admin-dashboard" class="waves-effect ">Create Requisition<i class="material-icons">add</i></a></li>
+                  <li><a href="/pages/admin-fixed-chart" class="waves-effect">Manage Requisition<i class="material-icons">list</i></a></li>
                 </ul>
               </div>
             </li>
           </ul>
         </li>
-      </ul>
-
-      
+      </ul> 
       
     </header>
         
 	<main>	
 		<div class="section container mt-2">
 
-		  <div class="row">
+	<div class="row">
     <div class="col s12 m4">
-      <span class="settings-title">Personal Information</span>
-      <p>Lo-fi you probably haven't heard of them etsy leggings raclette kickstarter four dollar toast. Raw denim fingerstache food truck chia health goth synth. Forage man bun intelligentsia freegan PBR&amp;B banh mi asymmetrical chambray. </p>
+      <div  class="card"  >
+          <div class="card-content no-padding" >
+            <ul class="collection flush"  >
+              <li class="collection-item">
+                <h5><a href="#!" class="grey-text">Personal Info</a></h5>
+              </li>
+              <li class="collection-item">
+                <h5><a href="#!" class="grey-text">Password & Security</a></h5>
+              </li>
+            </ul>
+          </div>
+      </div>
     </div>
     <div class="col s12 m8">
-
-      <div class="settings-group">
-        <ul class="collapsible setting">
-          <li class="">
-            <div class="collapsible-header" tabindex="0">
-              <span>Username</span>
-              <i class="material-icons caret right">keyboard_arrow_right</i>
+        <div class="card">
+            <div class="card-header personal-header">
+                <div  class="personal-icon icon-color">
+                    <i class="material-icons white-text">person_outline</i>
+                </div>
+                <h5 class="profile-card-header-text">Profile</h5>    
             </div>
-            <div class="collapsible-body" style="">
-              <div class="input-field">
-                <input id="username" type="text" class="validate">
+            <div  class="card-content">
+                <div class="row">
+              <div class="input-field col s6">
+                <input id="no" type="text" value="AA9238732" readonly>
+                <label for="no">No</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="fullname" type="text" value="Fred Mardy Jones" readonly>
+                <label for="fullname">Full Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+               <input id="department" type="text" value="Admin" readonly>
+                <label>Department</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="Department" type="text" value="Admin" readonly>
+                <label>Division</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="email" type="email" value="fmjones@mod.gov.ng" readonly>
+                <label for="email">Email</label>
+              </div>
+
+              <div class="input-field col s6">
+                <input id="username" type="text" value="">
                 <label for="username">Username</label>
               </div>
             </div>
-          </li>
-          <li class="">
-            <div class="collapsible-header" tabindex="0">
-              <span>Password</span>
-              <i class="material-icons caret right">keyboard_arrow_right</i>
-            </div>
-            <div class="collapsible-body" style="">
-              <div class="input-field">
-                <input id="password" type="Password" class="validate">
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" value="">
                 <label for="password">Password</label>
               </div>
             </div>
-          </li>
-          <li class="">
-            <div class="collapsible-header" tabindex="0">
-              <span>Gender</span>
-              <i class="material-icons caret right">keyboard_arrow_right</i>
-            </div>
-            <div class="collapsible-body" style="">
-              <form action="#">
-                <p>
-                  <label>
-                    <input class="with-gap" name="group1" type="radio" checked="">
-                    <span>Male</span>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input class="with-gap" name="group1" type="radio">
-                    <span>Female</span>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input class="with-gap" name="group1" type="radio">
-                    <span>Rather not say</span>
-                  </label>
-                </p>
-              </form>
-            </div>
-          </li>
-          <li class="">
-            <div class="collapsible-header" tabindex="0">
-              <span>Address</span>
-              <i class="material-icons caret right">keyboard_arrow_right</i>
-            </div>
-            <div class="collapsible-body" style="">
-              <div class="row">
-                <div class="input-field col s8">
-                  <input id="address" type="text" class="validate">
-                  <label for="address">Address</label>
-                </div>
-                <div class="input-field col s4">
-                  <input id="city" type="text" class="validate">
-                  <label for="city">City</label>
-                </div>
-                <div class="input-field col s4">
-                  <input id="state" type="text" class="validate">
-                  <label for="state">State</label>
-                </div>
-                <div class="input-field col s4">
-                  <input id="zip" type="text" class="validate">
-                  <label for="zip">Zip Code</label>
-                </div>
-                <div class="input-field col s4">
-                  <input id="country" type="text" class="validate">
-                  <label for="country">Country</label>
+           
+            <div class="row">
+              <div class="col s12">
+                This is an inline input field:
+                <div class="input-field inline">
+                  <input id="email_inline" type="email" value="">
+                  <label for="email_inline">Email</label>
+                  <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-
+            </div>          
+        </div>
+            </div>  
+        </div>    
     </div>
   </div>
 		</div>

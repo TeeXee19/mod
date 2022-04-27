@@ -22,11 +22,8 @@
 					<a class="waves-effect waves-block waves-light profile-button profile-dropdown" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-7.png" alt="avatar"><i></i></span>
 					</a>
 					<ul class="dropdown-content" id="profile-dropdown" tabindex="0" style="">
-		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-profile-page.html"><i class="material-icons">person_outline</i> Profile</a></li>
-		              <li tabindex="0"><a class="grey-text text-darken-1" href="app-chat.html"><i class="material-icons">chat_bubble_outline</i> Chat</a></li>
-		              <li tabindex="0"><a class="grey-text text-darken-1" href="page-faq.html"><i class="material-icons">help_outline</i> Help</a></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="./profile.html"><i class="material-icons">person_outline</i> Profile</a></li>
 		              <li class="divider" tabindex="0"></li>
-		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-lock-screen.html"><i class="material-icons">lock_outline</i> Lock</a></li>
 		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-login.html"><i class="material-icons">keyboard_tab</i> Logout</a></li>
 		            </ul>
 		        </li>
@@ -71,15 +68,9 @@
           <form class="col s12">
             <div class="row">
               <div class="input-field col s6">
-                <input id="request_no" name="request_no" type="number" class="validate">
-                <label for="request_no">Request Number</label>
-              </div>
-              <div class="input-field col s6">
                 <input id="requester" name="requester" type="text" class="validate" disabled="true" placeholder="John Doe">
                 <label for="requester">Requester</label>
               </div>
-            </div>
-            <div class="row">
               <div class="input-field col s6">
                 <select>
                   <option value="" disabled selected>Select Request Type</option>
@@ -88,81 +79,9 @@
                 </select>
                 <label>Request Type</label>
               </div>
-              <div class="input-field col s6">
-                <select>
-                  <option value="" disabled selected>Select Department</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                  <option value="3">Option 3</option>
-                </select>
-                <label>Department</label>
-              </div>
             </div>
-
-            <div class="row">
-              <div class="input-field col s6">
-                <select>
-                  <option value="" disabled selected>Select</option>
-                  <option value="Account">Account</option>
-                  <option value="Budget">Budget</option>
-                </select>
-                <label>Division</label>
-              </div>
-              <div class="input-field col s6">
-                <select>
-                  <option value="" disabled selected>Select</option>
-                  <option value="Assistance Chief Education Officer">Assistance Chief Education Officer</option>
-                  <option value="Assistant Director Advances">Assistant Director Advances</option>
-                  <option value="Assistant Director Capital">Assistant Director Capital</option>
-                  <option value="Assistant Director Education">Assistant Director Education</option>
-                  <option value="Assistant Director Exchange">Assistant Director Exchange</option>
-                  <option value="Assistant Director Final Accounts">Assistant Director Final Accounts</option>
-                  <option value="Assistant Director Funds">Assistant Director Funds</option>
-                  <option value="Assistant Director Procurement">Assistant Director Procurement</option>
-                  <option value="Assistant Director Recurrent">Assistant Director Recurrent</option>
-                  <option value="Assistant Director Salary/IPPIS">Assistant Director Salary/IPPIS</option>
-                  <option value="Assistant Director Staff Welfare">Assistant Director Staff Welfare</option>
-                  <option value="Audit">Audit</option>
-                  <option value="Cash Pay Office">Cash Pay Office</option>
-                  <option value="Checking">Checking</option>
-                  <option value="Chief Education Officer">Chief Education Officer</option>
-                  <option value="Deputy Director Budget">Deputy Director Budget</option>
-                  <option value="Deputy Director Education">Deputy Director Education</option>
-                  <option value="Deputy Director Expenditure">Deputy Director Expenditure</option>
-                  <option value="Deputy Director Fiscal and Final Report">Deputy Director Fiscal and Final Report</option>
-                  <option value="Deputy Director Procurement">Deputy Director Procurement</option>
-                  <option value="Deputy Director PRS">Deputy Director PRS</option>
-                  <option value="Deputy Director Staff Welfare">Deputy Director Staff Welfare</option>
-                  <option value="Director Education">Director Education</option>
-                  <option value="Director Finance and Account">Director Finance and Account</option>
-                  <option value="Director HRM">Director HRM</option>
-                  <option value="Director Procurement">Director Procurement</option>
-                  <option value="Director PRS">Director PRS</option>
-                  <option value="HOD">HOD</option>
-                  <option value="Permanent Secretary">Permanent Secretary</option>
-                  <option value="System Admin">System Admin</option>
-                  <option value="Technical Adviser">Technical Adviser</option>
-                  <option value="User">User</option>
-                </select>
-                <label>Rank</label>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="input-field col s6">
-                <select>
-                  <option value="" disabled selected>Select</option>
-                  <option selected="selected" value="Normal">Normal</option>
-                  <option value="Medium">Medium</option>
-                  <option value="High">High</option>
-                </select>
-                <label>Priority</label>
-              </div>
-            </div>
-
-              <div class="divider"></div>
-
-           <div class="row">
+            
+          <div class="row">
               <div class="input-field col s12">
                 <input id="title" name="title" type="text" class="validate">
                 <label for="title">Title</label>
@@ -180,16 +99,102 @@
             <div class="row">
               <div class="file-field input-field">
                 <div class="btn">
-                  <span>File</span>
+                  <span>Upload File</span>
                   <input type="file" multiple>
                 </div>
                 <div class="file-path-wrapper">
-                  <input class="file-path validate" type="text">
+                  <input class="file-path validate" placeholder="Upload one or more files" type="text">
                 </div>
               </div>
             </div>
-              
+            
+             <div class="divider"></div>
+
+             <h6 class="text-info" >Destination Info</h6>
+
+            <div class="row">
+            <div class="input-field col s6">
+              <input id="request_no" name="request_no" type="text" placeholder="File No/volume No. (e.g: 324/vi)" class="validate">
+              <label for="request_no">Request Number</label>
+            </div>
+            <div class="input-field col s6">
+              <select>
+                <option value="" disabled selected>Select Department</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Department</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <select>
+                <option value="" disabled selected>Select</option>
+                <option value="Account">Account</option>
+                <option value="Budget">Budget</option>
+              </select>
+              <label>Division</label>
+            </div>
+            <div class="input-field col s6">
+              <select>
+                <option value="" disabled selected>Select</option>
+                <option value="Assistance Chief Education Officer">Assistance Chief Education Officer</option>
+                <option value="Assistant Director Advances">Assistant Director Advances</option>
+                <option value="Assistant Director Capital">Assistant Director Capital</option>
+                <option value="Assistant Director Education">Assistant Director Education</option>
+                <option value="Assistant Director Exchange">Assistant Director Exchange</option>
+                <option value="Assistant Director Final Accounts">Assistant Director Final Accounts</option>
+                <option value="Assistant Director Funds">Assistant Director Funds</option>
+                <option value="Assistant Director Procurement">Assistant Director Procurement</option>
+                <option value="Assistant Director Recurrent">Assistant Director Recurrent</option>
+                <option value="Assistant Director Salary/IPPIS">Assistant Director Salary/IPPIS</option>
+                <option value="Assistant Director Staff Welfare">Assistant Director Staff Welfare</option>
+                <option value="Audit">Audit</option>
+                <option value="Cash Pay Office">Cash Pay Office</option>
+                <option value="Checking">Checking</option>
+                <option value="Chief Education Officer">Chief Education Officer</option>
+                <option value="Deputy Director Budget">Deputy Director Budget</option>
+                <option value="Deputy Director Education">Deputy Director Education</option>
+                <option value="Deputy Director Expenditure">Deputy Director Expenditure</option>
+                <option value="Deputy Director Fiscal and Final Report">Deputy Director Fiscal and Final Report</option>
+                <option value="Deputy Director Procurement">Deputy Director Procurement</option>
+                <option value="Deputy Director PRS">Deputy Director PRS</option>
+                <option value="Deputy Director Staff Welfare">Deputy Director Staff Welfare</option>
+                <option value="Director Education">Director Education</option>
+                <option value="Director Finance and Account">Director Finance and Account</option>
+                <option value="Director HRM">Director HRM</option>
+                <option value="Director Procurement">Director Procurement</option>
+                <option value="Director PRS">Director PRS</option>
+                <option value="HOD">HOD</option>
+                <option value="Permanent Secretary">Permanent Secretary</option>
+                <option value="System Admin">System Admin</option>
+                <option value="Technical Adviser">Technical Adviser</option>
+                <option value="User">User</option>
+              </select>
+              <label>Rank</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <select>
+                <option value="" disabled selected>Select</option>
+                <option selected="selected" value="Normal">Normal</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+              <label>Priority</label>
+            </div>
+          </div>
+
+           
         </div>
+
+            
+
+           
         <div class="card-action">
            <button class="btn waves-effect waves-light gradient-45deg-green-teal right" type="submit" name="action"> <i class="material-icons right">add</i> Create
             </button>
