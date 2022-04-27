@@ -63,19 +63,19 @@
     <div class="col s12 m4">
       <div  class="card"  >
           <div class="card-content no-padding" >
-            <ul class="collection flush"  >
+            <ul class=" collection flush"  >
               <li class="collection-item">
-                <h5><a href="#!" class="grey-text">Personal Info</a></h5>
+               <a type="btn" role="button" class="grey-text" onClick="toggle(personal_info)"> <h5>Personal Info</h5></a>
               </li>
               <li class="collection-item">
-                <h5><a href="#!" class="grey-text">Password & Security</a></h5>
+                <h5><a type="btn" role="button" class=" grey-text" onclick="toggle(security)">Password & Security</a></h5>
               </li>
             </ul>
           </div>
       </div>
     </div>
-    <div class="col s12 m8">
-        <div class="card">
+    <div class="col s12 m8" >
+        <div class="card profile" id="personal_info">
             <div class="card-header personal-header">
                 <div  class="personal-icon icon-color">
                     <i class="material-icons white-text">person_outline</i>
@@ -83,7 +83,7 @@
                 <h5 class="profile-card-header-text">Profile</h5>    
             </div>
             <div  class="card-content">
-                <div class="row">
+             <div class="row">
               <div class="input-field col s6">
                 <input id="no" type="text" value="AA9238732" readonly>
                 <label for="no">No</label>
@@ -94,13 +94,18 @@
               </div>
             </div>
             <div class="row">
-              <div class="input-field col s6">
-               <input id="department" type="text" value="Admin" readonly>
+              <div class="input-field col s4">
+               <input id="department" type="text" value="Finance and Welfare" readonly>
                 <label>Department</label>
               </div>
-              <div class="input-field col s6">
-                <input id="Department" type="text" value="Admin" readonly>
+              <div class="input-field col s4">
+                <input id="Department" type="text" value="Budget Division" readonly>
                 <label>Division</label>
+              </div>
+
+              <div class="input-field col s4">
+                <input id="rank" type="text" value="Deputy Director" readonly>
+                <label>Rank</label>
               </div>
             </div>
 
@@ -111,30 +116,49 @@
               </div>
 
               <div class="input-field col s6">
+                <input id="phone_no" type="tel" value="09099887766" readonly>
+                <label for="phone_no">Phone Number</label>
+              </div>
+
+              <div class="input-field col s6">
                 <input id="username" type="text" value="">
                 <label for="username">Username</label>
               </div>
             </div>
 
-            <div class="row">
+            </div>
+          </div>
+
+          <div class="card profile d-none" id="security">
+            <div class="card-header personal-header">
+                <div  class="personal-icon icon-color">
+                    <i class="material-icons white-text">security</i>
+                </div>
+                <h5 class="profile-card-header-text">Security</h5>    
+            </div>
+            <div  class="card-content">
+              <form action="" method="POST">
+             <div class="row">
               <div class="input-field col s12">
-                <input id="password" type="password" value="">
-                <label for="password">Password</label>
+                <input id="old_password" type="password" placeholder="Current Password">
+                <label for="old_password">Current Password</label>
               </div>
             </div>
-           
             <div class="row">
-              <div class="col s12">
-                This is an inline input field:
-                <div class="input-field inline">
-                  <input id="email_inline" type="email" value="">
-                  <label for="email_inline">Email</label>
-                  <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-                </div>
+              <div class="input-field col s12">
+                <input id="new_password" type="password" placeholder="New Password">
+                <label for="new_password">New Password</label>
               </div>
-            </div>          
-        </div>
-            </div>  
+            </div>
+            <div class="card-action">
+            <button class="btn waves-effect waves-light right icon-color " type="submit" name="action">Change
+            </button>
+          </form>
+          
+            </div>
+          </div>
+          </div>
+          
         </div>    
     </div>
   </div>
@@ -151,8 +175,14 @@
 	    $('.sidenav').sidenav();
 		$('.profile-dropdown').dropdown();
 	    $('.collapsible').collapsible();
-	  });
-		        
+      $('.tabs').tabs();      
+    });
+
+    function toggle(profileTab){
+       $('.profile').hide();
+      $(profileTab).show();
+     
+    };		        
     </script>
 </body>
 </html>
