@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Dashboard</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+  	<link type="text/css" rel="stylesheet" href="assets/css/custom.css"  media="screen,projection"/>
+</head>
+<body class="has-fixed-sidenav">
+	<header>
+      <div class="navbar-fixed">
+        <nav class="navbar white">
+          <div class="nav-wrapper">
+          	<a href="#!" class="brand-logo grey-text text-darken-4"><img src="assets/img/mod.png" alt="logo"></a>
+			<a href="#!" data-target="sidenav-left" class="sidenav-trigger left"><i class="material-icons black-text">menu</i></a>
+			<ul class="navbar-list right">
+				<li>
+					<a class="waves-effect waves-block waves-light profile-button profile-dropdown" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-7.png" alt="avatar"><i></i></span>
+					</a>
+					<ul class="dropdown-content" id="profile-dropdown" tabindex="0" style="">
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="./profile.html"><i class="material-icons">person_outline</i> Profile</a></li>
+		              <li class="divider" tabindex="0"></li>
+		              <li tabindex="0"><a class="grey-text text-darken-1" href="user-login.html"><i class="material-icons">keyboard_tab</i> Logout</a></li>
+		            </ul>
+		        </li>
+			</ul>
+          </div>
+        </nav>
+      </div>
+
+       <ul id="sidenav-left" class="sidenav sidenav-fixed" style="transform: translateX(0%);">
+        <li><a href="/pages/admin-dashboard" class="logo-container">Username<i class="material-icons left">spa</i></a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+           <li>
+              <a href="./user_dashboard.html" class="waves-effect ">Dashboard<i class="material-icons">web</i></a>
+           </li>
+           <li>
+              <a class="waves-effect " href="#">Notifications<i class="material-icons">notifications</i></a>
+           </li>
+           <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Requests<i class="material-icons chevron">chevron_left</i></a>
+              <div class="collapsible-body" >
+                <ul>
+                  <li><a href="./create_request.html" class="waves-effect ">Create Requisition<i class="material-icons">add</i></a></li>
+                  <li><a href="./manage_requests.html" class="waves-effect active">Manage Requisition<i class="material-icons">list</i></a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul> 
+      
+    </header>
+        
+    <main>
+      <div class="section add-dept-section">
+        <div class="row">
+          <div id="man" class="col s12">
+            <div class="card material-table">
+              <table id="datatable" class="bordered">
+                <thead class="gradient-45deg-green-teal">
+                  <tr >
+                    <th>S/No</th>
+                    <th>File No</th>
+                    <th>File No</th>
+                    <th>Department</th>
+                    <th style="width:100px;"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>MOD/FWD/BUGDET/23874/vi</td>
+                    <td>Education</td>
+                    <td>
+                      <a href='#!'><i class="material-icons blue-text">edit</i></a>
+                      <a href='#!'><i class="material-icons materialize-red-text">delete</i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Finance and Account</td>
+                    <td>
+                      <a href='#!'><i class="material-icons blue-text">edit</i></a>
+                      <a href='#!'><i class="material-icons materialize-red-text">delete</i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Human Resources</td>
+                    <td>
+                      <a href='#!'><i class="material-icons blue-text">edit</i></a>
+                      <a href='#!'><i class="material-icons materialize-red-text">delete</i></a>
+                    </td>
+                  </tr>
+                
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>         
+      </div>
+    </main>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+<script>
+
+	  $(document).ready(function(){
+	    $('.sidenav').sidenav();
+  
+  		$('.profile-dropdown').dropdown();
+
+	    $('.collapsible').collapsible();
+
+      $('select').formSelect();
+	  });	 
+</script>
+</body>
+</html>
