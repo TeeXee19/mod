@@ -59,8 +59,9 @@
     <main>
       <div class="col s12">
             <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
-              <li class="tab col s3"><a class="active" href="#pending">Pending Reqest</a></li>
-              <li class="tab col s3"><a href="#approved">Approved Request</a></li>
+              <li class="tab col s3"><a href="#outGoing">Outgoing Reqests</a></li>
+              <li class="tab col s3"><a class="active" href="#pending">Pending Reqests</a></li>
+              <li class="tab col s3"><a href="#approved">Approved Requests</a></li>
             </ul>
           </div>
       <div class="section add-dept-section">
@@ -138,6 +139,44 @@
               </table>
             </div>
           </div>
+
+          <div id="outGoing" class="col s12">
+            <div class="card material-table">
+              <table id="approvedDataTable" class="bordered">
+                <thead class="gradient-45deg-green-teal">
+                  <tr >
+                    <th style="width:60px;">S/No</th>
+                    <th>File No</th>
+                    <th>Sender</th>
+                    <th>Sender Department</th>
+                    <th style="width:50px;"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>MOD/FA/BUGDET/23874/vi</td>
+                    <td>Musa Fred Yemi</td>
+                    <td>FA</td>
+                    <td>
+                      <a href='#!'><i class="material-icons blue-text">visibility</i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>MOD/FA/BUGDET/23874/vi</td>
+                    <td>Musa Chioma Yemi</td>
+                    <td>FA</td>
+                    <td>
+                      <a href='#!'><i class="material-icons blue-text">visibility</i></a>
+                    </td>
+                  </tr>
+                
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
         </div>         
       </div>
     </main>
